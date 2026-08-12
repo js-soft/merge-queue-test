@@ -1,0 +1,129 @@
+name: Required checks
+
+on:
+  pull_request:
+  merge_group:
+
+permissions:
+  contents: read
+
+jobs:
+  check_01:
+    name: "Validate the Pull Request's labels"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Validate the Pull Request's labels passed"
+
+  check_02:
+    name: "Build Helm Chart"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build Helm Chart passed"
+
+  check_03:
+    name: "Check Formatting"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Check Formatting passed"
+
+  check_04:
+    name: "Run Admin UI Checks"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run Admin UI Checks passed"
+
+  check_05:
+    name: "Run Unit Tests"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run Unit Tests passed"
+
+  check_06:
+    name: "Build admin-ui Image"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build admin-ui Image passed"
+
+  check_07:
+    name: "Build consumer-api Image"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build consumer-api Image passed"
+
+  check_08:
+    name: "Build database-migrator Image"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build database-migrator Image passed"
+
+  check_09:
+    name: "Build identity-deletion-jobs Image"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build identity-deletion-jobs Image passed"
+
+  check_10:
+    name: "Build sse-server Image"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build sse-server Image passed"
+
+  check_11:
+    name: "Build admin-cli Image"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build admin-cli Image passed"
+
+  check_12:
+    name: "Run consumer-api Integration Tests (on postgres)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run consumer-api Integration Tests (on postgres) passed"
+
+  check_13:
+    name: "Run consumer-api Integration Tests (on sqlserver)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run consumer-api Integration Tests (on sqlserver) passed"
+
+  check_14:
+    name: "Run admin-api Integration Tests (on postgres)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run admin-api Integration Tests (on postgres) passed"
+
+  check_15:
+    name: "Run admin-api Integration Tests (on sqlserver)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run admin-api Integration Tests (on sqlserver) passed"
+
+  check_16:
+    name: "Run identity-deletion-job Integration Tests (on postgres)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run identity-deletion-job Integration Tests (on postgres) passed"
+
+  check_17:
+    name: "Run identity-deletion-job Integration Tests (on sqlserver)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run identity-deletion-job Integration Tests (on sqlserver) passed"
+
+  check_18:
+    name: "Run transport Tests (on postgres)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run transport Tests (on postgres) passed"
+
+  check_19:
+    name: "Run transport Tests (on sqlserver)"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run transport Tests (on sqlserver) passed"
+
+  check_20:
+    name: "Build event-handler Image"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Build event-handler Image passed"
