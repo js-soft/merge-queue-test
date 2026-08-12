@@ -1,0 +1,2 @@
+Initial B4 merge queue test change.
+Follow-up B4 change so squash uses the PR title.
